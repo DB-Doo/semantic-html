@@ -1,3 +1,4 @@
+/* this is a universal selector. These attributes will apply to everything on the page */
 * {
     box-sizing: border-box;
     padding: 0;
@@ -58,12 +59,12 @@ p {
     background-size: cover;
     background-position: center;
 }
-
+/* It creates a class for the section they want to float left and then apply custom rules to that section */
 .float-left {
     float: left;
     margin-right: 25px;
 }
-
+/* Applies a class to to the section they want to float right and set attributes */
 .float-right {
     float: right;
     margin-left: 25px;
@@ -74,7 +75,7 @@ p {
     display: inline-block;
     margin-left: 20px;
 }
-
+/* Sets the attributes for the benefits class */
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -85,56 +86,27 @@ p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
 }
-
-.benefit-lead {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-/* a lot of these are doing the same things. make this more consolidated*/
-.benefit-brand {
+/* Consolidated benefit class to use same margins and color*/
+.benefit {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
+/* Consolidated all the benefit H3 TAGS to apply all the same margin bottom and text aline*/
+.benefit h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
+/* Made all benefit class images the same Size and margins in block */
+.benefit img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.search-engine-optimization {
+/* Created a standard class for all the styles for this section */
+.standard {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -143,51 +115,18 @@ p {
     color: #ffffff;
 }
 
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.search-engine-optimization img {
+/* these attributes will only apply to images Under the standard parent*/
+.standard img {
     max-height: 200px;
 }
 
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 {
+/* these attributes will only apply to the H 2 takes under the standard parent */
+.standard h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
 
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
+/* footer is always at the bottom of the page contains author info and page info */
 .footer {
     padding: 30px;
     clear: both;
